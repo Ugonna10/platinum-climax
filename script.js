@@ -10,3 +10,7 @@ hamburgerBtn.addEventListener('click', () => {
 // Put navigation menu under navbar when navbar is open on small screen
 const pageHeaderHeight = document.getElementById('page-header').offsetHeight;
 navMenu.style.setProperty('--page-header-height', `${pageHeaderHeight}px`);
+
+//make hero take up remaing vh after navbar
+const hero = document.getElementById('hero');
+hero.style.setProperty('--page-header-height', `${pageHeaderHeight}px`);
