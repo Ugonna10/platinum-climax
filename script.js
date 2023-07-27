@@ -14,3 +14,10 @@ navMenu.style.setProperty('--page-header-height', `${pageHeaderHeight}px`);
 //make hero take up remaing vh after navbar
 const hero = document.getElementById('hero');
 hero.style.setProperty('--page-header-height', `${pageHeaderHeight}px`);
+
+document.getElementById('products-and-services-link').addEventListener('click', () =>{
+    hamburgerBtn.classList.remove('is-active');
+    navMenu.classList.remove('open');
+})
+
+document.documentElement.style.setProperty('--scroll-padding', `${pageHeaderHeight}px`)

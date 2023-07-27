@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=REM:wght@700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=REM:wght@700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -24,13 +25,13 @@
                 <!-- nav menu -->
                 <ul class="nav-menu" id="nav-menu">
                     <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__item-link">Home</a>
+                        <a href="index.html" class="nav-menu__item-link">Home</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__item-link">About</a>
+                        <a href="about.html" class="nav-menu__item-link">About</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a href="#" class="nav-menu__item-link">Products & services</a>
+                        <a href="index.html#products-and-services" class="nav-menu__item-link" id="products-and-services-link">Products & services</a>
                     </li>
                 </ul>
 
@@ -66,7 +67,7 @@
                 <h1 class="hero__main-text">Providing smart and digital solutions</h1>
                 <p class="hero__sub-text">Let smart technology elevate your environment and make every day more
                     convenient and enjoyable.</p>
-                <button class="btn">See How</button>
+                <a href="#products-and-services" class="btn">View Services</a>
             </div>
         </section>
 
@@ -80,9 +81,41 @@
                 <div class="about__texts">
                     <p class="about__text">
                         Platinum-Climax (PC) is a property developer, Consultant and also a specialist in
-                        the installation of Smart devices such as Solar/inverter, Camera , Speakers and Trackers  ...
+                        the installation of Smart devices such as Solar/inverter, Camera , Speakers and Trackers ...
                     </p>
                     <a href="about.html" class="btn about__btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products and Services Section-->
+        <section class="products-and-services" id="products-and-services">
+            <h2 class="products-and-services__heading">Products & Services</h2>
+
+            <div class="products-and-services__body">
+                <div class="card">
+                    <div class="card__image" style="background-image: url('images/property-developer-and-realtor-services.jpg');"></div>
+                    <div class="card__title">Property developer and realtor services</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="background-image: url('images/solar-panel.jpg');"></div>
+                    <div class="card__title">Installation of inverter/solar lighting system</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="background-image: url('images/solar-cctv.jpg');"></div>
+                    <div class="card__title">Installation of CCTV: HD Smart Wifi IP Cameras/ Solar Powered 4G SIM Card Cameras</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="background-image: url('images/installation-of-wall-and-ceiling-speakers.jpg');"></div>
+                    <div class="card__title">Installation of wall and ceilings speakers</div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image" style="background-image: url(images/car-tracker.jpg);"></div>
+                    <div class="card__title">Car Tracker Devices</div>
                 </div>
             </div>
         </section>
