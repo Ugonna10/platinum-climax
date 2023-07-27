@@ -305,6 +305,26 @@ body {
     font-size: 1.8rem;
 }
 
+/* About page */
+.about-articles.container{
+    max-width: 85rem;
+}
+.about-article p, .our-core-values-list{
+    margin-bottom: 1.5rem;
+}
+
+.about-article{
+    margin-bottom: 8rem;
+}
+
+.article-heading{
+    margin-block: 4rem;
+    text-align: center;
+}
+
+.sub-heading{
+    font-size: 2.2rem;
+}
 
 /* Medium screens */
 @media (min-width: 720px) {
