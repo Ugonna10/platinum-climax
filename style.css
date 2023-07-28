@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --color-primary: rgba(39, 139, 235);
-    --color-primary-light: rgba(39, 139, 235, 75%);
+    --color-secondary: rgb(253, 149, 114);
     --color-dark-gray: rgba(50, 50, 50, 0.5);
     --color-black: #1a1a1a;
     --color-white: #fff;
@@ -89,7 +89,7 @@ a {
 
 .btn:hover, .btn:focus, .btn:active {
     font-weight: 700;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-secondary);
 }
 
 /* Small screens */
@@ -122,8 +122,8 @@ body {
 }
 
 .logo {
-    font-family: "REM", serif;
-    font-size: 3.3rem;
+    width: auto;
+    height: 6rem;
 }
 
 .nav-menu {
@@ -132,7 +132,7 @@ body {
     align-items: center;
     row-gap: 5rem;
     position: fixed;
-    top: var(--page-header-height, 7.8rem);
+    top: var(--page-header-height, 9.6rem);
     left: 100%;
     width: 100vw;
     height: calc(100vh - var(--page-header-height));
@@ -268,6 +268,13 @@ body {
     padding-block: 5rem;
 }
 
+.footer__logo-and-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -285,8 +292,7 @@ body {
 }
 
 .footer__logo {
-    color: var(--color-white);
-    margin-bottom: 2rem;
+    height: 4rem;
 }
 
 .footer__contacts {
@@ -401,9 +407,11 @@ body {
     .footer .container {
         flex-direction: row;
         justify-content: space-between;
-        align-items: baseline;
     }
 
+    .footer__logo-and-links{
+        align-items: start;
+    }
 }
 
 /* Large screens */
